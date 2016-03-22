@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Film sepeti Giriş</title>
+    </head>
+    <body>
+        <div>
+    <h1><a href="/">Film Sepeti</a></h1>
+</div>
+        {% for film in films %}
+    <div>
+        <p> {{ film.title }}</p>
+        <p>{{ film.year|linebreaks }}</p>
+    </div>
+    {% endfor %}
+    </body>
+</html>
